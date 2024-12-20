@@ -12,7 +12,9 @@ The model is a Convolutional Neural Network (CNN) trained on a dataset of graysc
 - **Simple to Use**: The model is available as a pre-trained `.keras` file and can be integrated into applications with minimal setup.
 
 ### Weaknesses:
-- **Limited to 46 Classes**: The model only recognizes characters and digits in the provided dataset and cannot generalize to unseen or complex handwriting styles.
+- The model recognizes only the following Devanagari characters and digits:
+    - **Consonants**: क, ख, ग, घ, ङ, च, छ, ज, झ, ञ, ट, ठ, ड, ढ, ण, त, थ, द, ध, न, प, फ, ब, भ, म, य, र, ल, व, श, ष, स, ह, क्ष, त्र, ज्ञ
+    - **Digits**: ०, १, २, ३, ४, ५, ६, ७, ८, ९
 - **No Contextual Understanding**: The model predicts each character individually and does not consider the context of adjacent characters.
 - **Preprocessed Input**: The model expects a fixed input size of 32x32 grayscale images. Additional preprocessing is required for larger or colored images.
 
